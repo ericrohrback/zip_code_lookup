@@ -72,7 +72,10 @@ def load_pfas_zipcodes_from_mongodb():
         pfas_zips_clean = set()
         
         for row in pfas_zip_codes:
-            codes = [code.strip() for code in str(row).split(';')]
+            if isinstance(row,list):
+                codes = [str(code).strip() for code in row if code]
+            else:
+                codes = [code.strip() for code in str(row).split(';')]
             for code in codes:
                 if code and code != 'nan':
                     pfas_zips_clean.add(code)
