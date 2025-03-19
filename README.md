@@ -1,25 +1,13 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+# PFAS Zip Code Lookup Tool 
 
-Description of the app ...
 
-## Demo App
+This app is designed to check whether the zip code you're currently in has been found to be an active area for PFAS contamination.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+## Try the App
 
-## GitHub Codespaces
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pfas-zip-codes.streamlit.app/)
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
+## Why does this exist?
 
-## Section Heading
+This is to help anyone questioning whether their area may be contaminated by PFAS chemicals. Use this tool by entering a zip code, and it will evaluate whether that zip code exists in the current database of zip codes with known PFAS exposure.
 
-This is filler text, please replace this with text for this section.
-
-## Further Reading
-
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
