@@ -93,7 +93,7 @@ if st.session_state.pfas_zip_codes is None:
         st.markdown(f'<p>Database loaded with {len(st.session_state.pfas_zip_codes)} unique PFAS-affected zip codes.</p>', unsafe_allow_html=True)
 
 # Create tabs for different functionalities
-tab1 = st.tabs(["Check Single Zip Code"])
+tab1, tab2 = st.tabs(["Check Single Zip Code", "Why Check for PFAS?"])
 
 # Tab 1: Single Zip Code Check
 with tab1:
@@ -112,6 +112,8 @@ with tab1:
                 else:
                     st.warning(f"❌ Zip code {zip_code} is NOT in a PFAS-affected area.")
 
+with tab2:
+    st.markdown('<p class="subtitle">Potential Disabilities Caused by PFAS Exposure</p>', unsafe_allow_html=True)
 # # Tab 2: Process Client File
 # with tab2:
 #     st.markdown('<p class="subtitle">Check Multiple Zip Codes</p>', unsafe_allow_html=True)
